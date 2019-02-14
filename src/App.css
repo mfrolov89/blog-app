@@ -1,0 +1,247 @@
+.App {
+	display: flex;
+	width: 1440px;
+}
+
+	aside {
+		background: #333;
+		flex: 1 1 400px;
+		min-height: 1088px;
+	}
+	
+	main {
+		background: #fff;
+		flex: 1 1 1040px;
+	}
+
+/* Sidebar */
+aside > * {
+	margin: 0 40px;
+}
+
+		.header_title {
+			color: #f0f0f0;
+			font: normal 36px "Roboto";
+			line-height: 40px;
+			margin-top: 50px;
+		}
+		
+		.header_desc {
+			color: #9b9b9b;
+			font: normal 14px "Roboto";
+			margin-top: 20px;
+		}
+	
+	nav {
+		border-top: 1px solid #5e5e5e;
+		border-bottom: 1px solid #5e5e5e;
+		margin-top: 30px;
+		padding: 30px 0;
+		width: 200px;
+	}
+
+		.nav_list  {
+			list-style-type: none;
+		}
+
+			.nav_list-item {
+				margin-top: 15px;
+			}
+	
+			.nav_list > :first-child {
+				margin-top: 0;
+			}
+	
+				.nav_list-item_link {
+					color: #969696;
+					font: normal 16px "Roboto";
+					line-height: 20px;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+	
+				.nav_list-item_link:hover {
+					color: #fff;
+				}
+
+	.social {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+		.social_link {
+			display: inline-block;
+			margin-right: 20px;
+		}
+	
+			.social_link_img {
+				display: block;
+				width: 20px;
+				height: 20px;
+			}
+	
+			.social_link_img:hover{
+				opacity: .6;
+			}
+
+/* About */
+.about {
+	background: url(./marion-michele-1191859-unsplash.jpg) 0 -7px no-repeat;
+	overflow: hidden;
+}
+
+	.about > * {
+		padding: 0 40px;
+	}
+
+	.about_title {
+		color: #333;
+		font: normal 36px "Roboto";
+		margin-top: 223px;
+		margin-bottom: 30px;
+	}
+	
+	.about_sub-title {
+		color: #333;
+		font: normal 24px "Roboto";
+		margin: 30px 0 15px 0;
+	}
+	
+	.about_note,
+	.about_paragraph {
+		color: #000;
+		font: normal 16px "Roboto";
+	}
+
+/* All posts and one post  */
+.posts {
+	margin: 10px 37px 0 50px;
+}
+
+.post {
+	margin: 50px 40px 0 40px;
+}
+
+	.post header {
+		border-bottom: 1px solid #333;
+	}
+
+	.posts_item {
+		border-bottom: 1px solid #d3d3d3;
+		padding: 34px 0 42px 0;
+	}
+		.post_title:first-letter,
+		.post_text:first-letter,
+		.posts_item_title:first-letter,
+		.posts_item_text:first-letter {
+			text-transform: uppercase;
+		}
+		
+		.post_title,
+		.posts_item_title {
+			color: #333;
+			font: normal 36px "Roboto";
+		}
+		
+		.post_meta,
+		.posts_item_meta {
+			color: #969696;
+			font: normal 14px "Roboto";
+			text-transform: uppercase;
+		}
+
+		.posts_item_meta {
+			margin: 15px 0;
+		}
+
+		.post_meta {
+			margin: 20px 0;
+		}
+
+		.post_title,
+		.post_meta {
+			text-align: center;
+		}
+
+			.post_meta_separator,
+			.posts_item_meta_separator {
+				margin: 0 10px;
+			}
+		
+		.post_text {
+			color: #000;
+			font: normal 16px "Roboto";
+			margin: 40px 0 50px;
+		}
+
+		.posts_item_text {
+			color: #000;
+			font: normal 14px "Roboto";
+			margin-bottom: 15px;
+		}
+
+.post-cap {
+	margin: 0 40px;
+}
+
+	.post-cap_sub-title {
+		color: #333;
+		font: normal 24px "Roboto";
+		margin-top: 30px;
+	}
+	
+	.post-cap_paragraph {
+		color: #000;
+		font: normal 16px "Roboto";
+		margin-top: 15px;
+	}
+
+/* Button */
+.button_continue-post {
+	border: 1px solid #d3d3d3;
+	box-sizing: border-box;
+	border-radius: 20px;
+	color: #000;
+	display: inline-block;
+	font: normal 14px "Roboto";
+	position: relative;
+	left: -3px;
+	line-height: 14px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 9px;
+	transition: border-color .5s;
+	width: 230px;
+	height: 35px;
+}
+
+.button_continue-post:hover {
+	border-color: #000;
+}
+
+.button_all-posts,
+.button_more-posts {
+	color: #000;
+	background: transparent;
+	border: 1px solid #d3d3d3;
+	box-sizing: border-box;
+	border-radius: 3px;
+	display: block;
+	font: normal 14px "Roboto";
+	margin: 40px auto;
+	padding-top: 16px;
+	text-align: center;
+	transition: border-color .5s;
+	text-decoration: none;
+	width: 200px;
+	height: 50px;
+}
+
+button.button_more-posts {
+	padding-top: 0;
+}
+
+.button_all-posts:hover,
+.button_more-posts:hover {
+	border-color: #000;
+}
