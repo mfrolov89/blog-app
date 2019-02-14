@@ -1,0 +1,269 @@
+%title {
+	color: #333;
+	font: normal 36px "Roboto";
+}
+
+%sub-title {
+	color: #333;
+	font: normal 24px "Roboto";
+}
+
+%text_16 {
+	color: #000;
+	font: normal 16px "Roboto";
+}
+
+%text_14 {
+	color: #000;
+	font: normal 14px "Roboto";
+}
+
+%meta {
+	color: #969696;
+	font: normal 14px "Roboto";
+	text-transform: uppercase;
+}
+
+%separator {
+	margin: 0 10px;
+}
+
+%button {
+	border: 1px solid #d3d3d3;
+	box-sizing: border-box;
+	color: #000;
+	font: normal 14px "Roboto";
+	text-align: center;
+	text-decoration: none;
+	transition: border-color .5s;
+}
+
+
+.App {
+	display: flex;
+	width: 1440px;
+
+	aside {
+		background: #333;
+		flex: 1 1 400px;
+		min-height: 1088px;
+	}
+
+	main {
+		background: #fff;
+		flex: 1 1 1040px;
+	}
+}
+
+// Sidebar
+aside > * {
+	margin: 0 40px;
+}
+
+		.header_title {
+			color: #f0f0f0;
+			font: normal 36px "Roboto";
+			line-height: 40px;
+			margin-top: 50px;
+		}
+		
+		.header_desc {
+			color: #9b9b9b;
+			font: normal 14px "Roboto";
+			margin-top: 20px;
+		}
+	
+	nav {
+		border-top: 1px solid #5e5e5e;
+		border-bottom: 1px solid #5e5e5e;
+		margin-top: 30px;
+		padding: 30px 0;
+		width: 200px;
+	}
+
+		.nav_list {
+			list-style-type: none;
+
+			> :first-child {
+				margin-top: 0!important;
+			}
+
+			&-item {
+				margin-top: 15px;
+	
+				&_link {
+					color: #969696;
+					font: normal 16px "Roboto";
+					line-height: 20px;
+					text-decoration: none;
+					text-transform: uppercase;
+	
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+	.social {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	
+		&_link {
+			display: inline-block;
+			margin-right: 20px;
+	
+			&_img {
+				display: block;
+				width: 20px;
+				height: 20px;
+	
+				&:hover{
+					opacity: .6;
+				}
+			}
+		}
+	}
+
+// About
+.about {
+	background: url(./marion-michele-1191859-unsplash.jpg) 0 -7px no-repeat;
+	overflow: hidden;
+
+	> * {
+		padding: 0 40px;
+	}
+
+	&_title {
+		@extend %title;
+		margin-top: 223px;
+		margin-bottom: 30px;
+	}
+	
+	&_sub-title {
+		@extend %sub-title;
+		margin: 30px 0 15px 0;
+	}
+	
+	&_note,
+	&_paragraph {
+		@extend %text_16;
+	}
+}
+
+
+// Home page
+.posts {
+	margin: 10px 37px 0 50px;
+
+	&_item {
+		border-bottom: 1px solid #d3d3d3;
+		padding: 34px 0 42px 0;
+
+		&_title {
+			@extend %title;
+		}
+
+		&_meta {
+			@extend %meta;
+			margin: 15px 0;
+
+			&_separator {
+				@extend %separator;
+			}
+		}
+
+		&_text {
+			@extend %text_14;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+// Article page
+.post {
+	margin: 50px 40px 0 40px;
+
+	header {
+		border-bottom: 1px solid #333;
+	}
+
+		&_title {
+			@extend %title;
+			text-align: center;
+		}
+		
+		&_meta  {
+			@extend %meta;
+			margin: 20px 0;
+			text-align: center;
+			
+			&_separator {
+				@extend %separator;
+			}
+		}
+		
+	&_text {
+		@extend %text_16;
+		margin: 40px 0 50px;
+	}
+}
+
+.post_title:first-letter,
+.post_text:first-letter,
+.posts_item_title:first-letter,
+.posts_item_text:first-letter {
+	text-transform: uppercase;
+}
+
+.post-cap {
+	margin: 0 40px;
+	
+	&_sub-title {
+		@extend %sub-title;
+		margin-top: 30px;
+	}
+	
+	&_paragraph {
+		@extend %text_16;
+		margin-top: 15px;
+	}
+}
+
+
+/* Button */
+.button_continue-post {
+	@extend %button;
+	border-radius: 20px;
+	display: inline-block;
+	position: relative;
+	left: -3px;
+	line-height: 14px;
+	padding-top: 9px;
+	width: 230px;
+	height: 35px;
+
+	&:hover {
+		border-color: #000;
+	}
+}
+
+.button_all-posts,
+.button_more-posts {
+	@extend %button;
+	background: transparent;
+	border-radius: 3px;
+	display: block;
+	margin: 40px auto;
+	padding-top: 16px;
+	width: 200px;
+	height: 50px;
+
+	&:hover {
+		border-color: #000;
+	}
+}
+
+button.button_more-posts {
+	padding-top: 0;
+}
