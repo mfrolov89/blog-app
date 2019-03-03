@@ -83,8 +83,6 @@ class ViewPost extends Component {
   componentDidMount() {
     const { number } = this.props.match.params;
 
-    console.log(number)
-
     axios.get('https://jsonplaceholder.typicode.com/posts/'+number)
     .then(response => {
       this.setState({ post: response.data })
